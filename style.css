@@ -1,0 +1,109 @@
+*
+{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+
+body{
+    background-image: url(logo.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+.menu-bar{
+    background: lime;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color:rgb(184, 3, 3);
+    background-color: dimgray;
+    border-radius: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0, 0,0.19);
+}
+.menu-bar ul li
+{
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: rgb(5, 3, 3);
+   
+
+}
+.active, .menu-bar ul li:hover
+{
+    background:rgb(83,119,236);
+    border-radius: 20px;
+
+}
+.menu-bar .fa
+{
+    margin-right: 10px;
+}
+.sub-menu-1
+{
+    display: none;
+
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+display: block;
+position:absolute;
+background-color:blue;
+margin-top: 20px;
+margin-left: 15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+display:inline;
+margin: 30px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+width: 150px;
+padding: 3px;
+border-bottom: 1px dotted blue;
+background: transparent;
+border-radius: 50;
+text-align:left;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: rgb(180, 180, 243);
+}
+.topnav {
+    overflow: hidden;
+    background-color: rgb(83,119,236);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 14px ;
+    text-decoration: solid;
+    font-size: 17px;
+}
+.topnav a:hover{
+    background-color: rgb(190, 241, 4);
+    color: aqua;
+}
+.topnav a.active{
+    color: black;
+    width: 14%;
+}
